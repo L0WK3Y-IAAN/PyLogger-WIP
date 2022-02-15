@@ -1,2 +1,2 @@
 # PyLogger
-Dont for get to add your own API keys 😊
+Dont forget to add your own API keys 😊
